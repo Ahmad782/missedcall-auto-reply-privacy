@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Missed Call Auto Reply SMS</title>
+<style>
+  :root { --text:#1b1b21; --muted:#47464f; --accent:#4f46e5; --bg:#fbf8ff; --card:#ffffff; --line:#e4e1ec; }
+  @media (prefers-color-scheme: dark) {
+    :root { --text:#e4e1ea; --muted:#c8c5d0; --accent:#c3c0ff; --bg:#131318; --card:#1b1b21; --line:#35343a; }
+  }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:28px; line-height:1.25; margin:0 0 4px; }
+  h2 { font-size:20px; margin:32px 0 8px; color:var(--accent); }
+  p, li { color:var(--text); }
+  .meta { color:var(--muted); margin:0 0 24px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px 20px; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  th, td { text-align:left; vertical-align:top; padding:10px 8px; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:600; }
+  a { color:var(--accent); }
+  .table-wrap { overflow-x:auto; }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy</h1>
+<p class="meta">Missed Call Auto Reply SMS (package <code>com.mikao.missedautoreply</code>) · Developer: Mikao · Effective 26 September 2026</p>
+
+<div class="card">
+<p><strong>In short:</strong> the app works on your phone. Your calls, contacts, messages and history are kept on your device and are not uploaded to us. Two things involve the internet: ads (Google AdMob), and the optional <em>AI reply suggestions</em> feature, which is off until you turn it on.</p>
+</div>
+
+<h2>What the app uses on your phone, and why</h2>
+<div class="table-wrap">
+<table>
+<tr><th>Permission / data</th><th>Why it's used</th></tr>
+<tr><td>Phone state and call log</td><td>To notice when a call rings out unanswered and read the caller's number, so your reply can be sent to them.</td></tr>
+<tr><td>Send SMS</td><td>To send the reply you wrote to the missed caller, from your own SIM. Your carrier's normal SMS rates apply.</td></tr>
+<tr><td>Receive SMS (only if you turn on "Reply to text messages")</td><td>To read the sender's number of an incoming text so it can get your reply. The app does not store or upload the content of your texts.</td></tr>
+<tr><td>Contacts (optional)</td><td>To greet callers by name and tell saved contacts apart from unknown numbers.</td></tr>
+<tr><td>Notification access (optional, WhatsApp features)</td><td>To notice missed WhatsApp calls and, if you turn on reply suggestions, to read an incoming WhatsApp message so the app can suggest replies. The app never sends a WhatsApp message by itself: a reply is sent only when you tap it.</td></tr>
+<tr><td>Bluetooth connect (optional)</td><td>To know when your phone is connected to the car you chose, for "turn on while driving".</td></tr>
+<tr><td>Notifications</td><td>To tell you when a reply is sent and to show reply suggestions.</td></tr>
+</table>
+</div>
+<p>Your profiles, reply messages, blocked numbers, reply history (caller number or name, time, what was sent) and the replies you picked are stored only in the app's private storage on your phone. History older than 90 days is deleted automatically.</p>
+
+<h2>Optional AI reply suggestions</h2>
+<p>This feature is off by default and asks for your consent before it turns on. When it is on and a message doesn't match one of the app's built-in replies:</p>
+<ul>
+<li>The <strong>text of that message</strong> is sent over an encrypted connection to our server (hosted on Cloudflare), <strong>without the sender's name or number</strong>.</li>
+<li>Our server forwards it to an AI service to write three short suggestions: Google Gemini API, Groq or Cerebras, whichever is available.</li>
+<li>Our server <strong>does not store the message text</strong>. To avoid asking the AI twice for the same message, it keeps a one-way fingerprint (hash) of the message together with the generated suggestions.</li>
+<li>To count AI credits, the app creates a random identifier on your phone. Our server stores only a one-way fingerprint of it, your credit balance and request counts. It is not linked to your name, phone number, email or Google account.</li>
+<li>The AI services process the text under their own terms and may keep it or use it to improve their products: <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>, <a href="https://groq.com/privacy-policy/">Groq privacy policy</a>, <a href="https://www.cerebras.ai/privacy-policy">Cerebras privacy policy</a>. Don't turn this feature on if you don't want message text shared with them.</li>
+</ul>
+<p>You can turn AI suggestions off at any time in Settings › AI reply suggestions.</p>
+
+<h2>Advertising</h2>
+<p>The app shows ads from Google AdMob. AdMob may collect your device's advertising ID, IP address, approximate location and information about ad interactions to show and measure ads, as described in <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>. Where required (for example in the EEA, UK and Switzerland) the app asks for your consent first, and you can change your choice in Settings › Ad privacy choices.</p>
+<p>If you watch a rewarded ad for AI credits, Google sends our server a signed confirmation containing the random identifier described above, so the credits reach your app.</p>
+
+<h2>Sharing</h2>
+<p>We do not sell your data and do not share it with anyone other than the services named above (AdMob, and the AI services only if you turn AI suggestions on).</p>
+
+<h2>Keeping and deleting your data</h2>
+<ul>
+<li>Clear your reply history any time in History › Clear.</li>
+<li>Uninstalling the app deletes everything stored on your phone.</li>
+<li>To delete the AI credit record on our server, email us at the address below. The cached suggestions contain no personal identifiers.</li>
+</ul>
+
+<h2>Security</h2>
+<p>Data sent to our server uses HTTPS. AI service keys are kept on the server and are never included in the app.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children under 13 and we do not knowingly collect their data.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, we'll update this page and its effective date.</p>
+
+<h2>Contact</h2>
+<p>Mikao · <a href="mailto:hclodhran1@gmail.com">hclodhran1@gmail.com</a></p>
+</main>
+</body>
+</html>
